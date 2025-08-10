@@ -1,0 +1,46 @@
+
+# Git Branching and Merging Lab
+
+## Branching Steps
+
+# Step 1: Create a new branch
+git branch GitNewBranch
+
+# Step 2: List all branches
+git branch -a
+
+# Step 3: Switch to new branch
+git checkout GitNewBranch
+
+# Step 4: Add files to the branch
+echo "This is a feature file in GitNewBranch." > feature.txt
+
+# Step 5: Commit changes
+git add feature.txt
+git commit -m "Add feature.txt in GitNewBranch"
+
+# Step 6: Check status
+git status
+
+## Merging Steps
+
+# Step 1: Switch back to master
+git checkout master
+
+# Step 2: See differences (CLI)
+git diff GitNewBranch
+
+# Step 3: See differences with P4Merge (if installed)
+git mergetool
+
+# Step 4: Merge branch into master
+git merge GitNewBranch
+
+# Step 5: View merge log
+git log --oneline --graph --decorate
+
+# Step 6: Delete branch after merging
+git branch -d GitNewBranch
+
+# Step 7: Check final status
+git status

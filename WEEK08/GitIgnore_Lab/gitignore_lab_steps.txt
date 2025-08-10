@@ -1,0 +1,23 @@
+
+# Git Ignore Lab
+
+## Step 1: Initialize Git repository
+git init GitDemoIgnore
+cd GitDemoIgnore
+
+## Step 2: Create unwanted files/folders
+echo "This is a log file" > debug.log
+mkdir log
+echo "Application log" > log/app.log
+
+## Step 3: Create .gitignore file
+echo "*.log" > .gitignore
+echo "log/" >> .gitignore
+
+## Step 4: Verify ignored files
+git status  # Should not show debug.log or log/ folder
+
+## Step 5: Add other files and commit
+touch main.py
+git add main.py .gitignore
+git commit -m "Add main.py and .gitignore"

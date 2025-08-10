@@ -1,0 +1,2 @@
+Welcome to the Git Demo project!
+This file is tracked by Git.

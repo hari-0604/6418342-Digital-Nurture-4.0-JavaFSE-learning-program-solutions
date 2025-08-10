@@ -1,0 +1,12 @@
+
+# Step 1: Git Configuration Commands
+
+# Check git installation
+git --version
+
+# Configure user details
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+# Verify configuration
+git config --list

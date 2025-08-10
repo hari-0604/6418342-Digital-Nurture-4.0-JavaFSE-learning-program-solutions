@@ -1,0 +1,25 @@
+
+# Step 3: Create repository and add a file
+
+# Initialize repository
+git init GitDemo
+cd GitDemo
+
+# Create file
+echo "Welcome to the Git Demo project!" > welcome.txt
+
+# Check file
+cat welcome.txt
+
+# Stage file
+git add welcome.txt
+
+# Commit with message
+git commit -m "Add welcome.txt"
+
+# Add remote (replace URL with your GitLab repo)
+git remote add origin https://gitlab.com/username/GitDemo.git
+
+# Pull and push changes
+git pull origin master
+git push origin master

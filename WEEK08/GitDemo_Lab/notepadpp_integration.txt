@@ -1,0 +1,14 @@
+
+# Step 2: Integrate Notepad++ as default Git editor
+
+# Add Notepad++ to PATH environment variable (Windows)
+# Control Panel -> System -> Advanced System Settings -> Environment Variables -> Path -> Edit -> Add path to notepad++.exe
+
+# Check if notepad++ opens
+notepad++
+
+# Create alias for Git Bash
+alias np='notepad++'
+
+# Set as default Git editor
+git config --global core.editor "notepad++"
